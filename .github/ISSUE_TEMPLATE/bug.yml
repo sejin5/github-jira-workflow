@@ -1,7 +1,7 @@
-name: "\U0001F41B 버그 리포트 템플릿"
+name: "🐛 버그 리포트 템플릿"
 description: 프로젝트에서 발생하는 버그에 대해 명세합니다.
 title: "[Fix] Issue title"
-labels: "\U0001F41B fix"
+labels: "🐛 fix"
 body:
 - type: input
   id: parentKey

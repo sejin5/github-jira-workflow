@@ -52,7 +52,7 @@ jobs:
 
           if echo "$LABELS" | grep -q "✨ feat"; then
             TEMPLATE=.github/ISSUE_TEMPLATE/feature.yml
-          elif echo "$LABELS" | grep -qi "\U0001F41B fix"; then
+          elif echo "$LABELS" | grep -qi "🐛 fix"; then
             TEMPLATE=.github/ISSUE_TEMPLATE/bug.yml
           elif echo "$LABELS" | grep -qi "♻️ refactor"; then
             TEMPLATE=.github/ISSUE_TEMPLATE/refactor.yml
