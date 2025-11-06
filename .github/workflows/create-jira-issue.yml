@@ -99,7 +99,7 @@ jobs:
 
             ---
 
-            ${{ github.event.issue.body }}
+            ${{ steps.issue-parser.outputs.description }}
           fields: |
             {
               "assignee": {
