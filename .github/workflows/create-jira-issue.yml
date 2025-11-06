@@ -43,13 +43,13 @@ jobs:
           TEMPLATE=""
 
           if echo "$LABELS" | grep -q "✨ feat"; then
-            TEMPLATE='/.github/ISSUE_TEMPLATE/feature.yml'
+            TEMPLATE=.github/ISSUE_TEMPLATE/feature.yml
           elif echo "$LABELS" | grep -qi "\U0001F41B fix"; then
-            TEMPLATE='/.github/ISSUE_TEMPLATE/bug.yml'
+            TEMPLATE=.github/ISSUE_TEMPLATE/bug.yml
           elif echo "$LABELS" | grep -qi "♻️ refactor"; then
-            TEMPLATE='.github/ISSUE_TEMPLATE/refactor.yml'
+            TEMPLATE=.github/ISSUE_TEMPLATE/refactor.yml
           else
-            TEMPLATE='.github/ISSUE_TEMPLATE/feature.yml'
+            TEMPLATE=.github/ISSUE_TEMPLATE/feature.yml
           fi
 
           echo "TEMPLATE=$TEMPLATE" >> $GITHUB_OUTPUT
