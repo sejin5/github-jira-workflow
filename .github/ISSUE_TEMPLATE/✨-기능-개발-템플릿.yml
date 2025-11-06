@@ -2,7 +2,6 @@ name: "✨ 기능 개발 템플릿"
 description: 개발해야 하는 기능을 단위별로 명세합니다.
 title: "[Feat] Issue title"
 labels: "✨ feat"
-assignees: ""
 body:
   - type: input
     id: parentKey
