@@ -95,11 +95,7 @@ jobs:
           issuetype: ${{ steps.set_issue_type.outputs.ISSUE_TYPE }}
           summary: "${{ github.event.issue.title }}"
           description: |
-            GitHub Issue: ${{ github.event.issue.html_url }}
-
-            ---
-
-           ${{ steps.md2jira.outputs.output-text }}
+           ${{ steps.md2jira.outputs.output-text }}"
           fields: |
             {
               "assignee": {
