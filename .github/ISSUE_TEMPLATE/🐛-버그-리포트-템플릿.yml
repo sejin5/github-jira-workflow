@@ -39,4 +39,5 @@ body:
 
 <!-- 기타 참고할만한 정보나 자료가 있다면 자유롭게 작성해주세요. -->
 
-validations: required: true
+validations:
+  required: true
