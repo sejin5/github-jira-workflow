@@ -15,7 +15,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: '기능 개발 요약'
+      label: ''
       description: '진행할 작업들을 작성해주세요'
       value: | 
         ## ✨ 기능 개요
