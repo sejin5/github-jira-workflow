@@ -95,11 +95,11 @@ jobs:
           issuetype: ${{ steps.set_issue_type.outputs.ISSUE_TYPE }}
           summary: "${{ github.event.issue.title }}"
           description: |
-            GitHub Issue: [${{ github.event.issue.html_url }}](${{ github.event.issue.html_url }})
+            GitHub Issue: [${{ github.event.issue.title }}](${{ github.event.issue.html_url }})
 
             ---
 
-            ${{ steps.issue-parser.outputs.description }}
+            ${{ steps.issue-parser.outputs.issueparser_parentKey.description }}
           fields: |
             {
               "assignee": {
