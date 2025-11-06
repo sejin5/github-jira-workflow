@@ -52,7 +52,7 @@ jobs:
 
           if echo "$LABELS" | grep -q "✨ feat"; then
             TEMPLATE=.github/ISSUE_TEMPLATE/feature.yml
-          elif echo "$LABELS" | grep -qi "🐛 fix"; then
+          elif echo "$LABELS" | grep -qi "\U0001F41B fix"; then
             TEMPLATE=.github/ISSUE_TEMPLATE/bug.yml
           elif echo "$LABELS" | grep -qi "♻️ refactor"; then
             TEMPLATE=.github/ISSUE_TEMPLATE/refactor.yml
@@ -94,8 +94,7 @@ jobs:
           project: GJC
           issuetype: ${{ steps.set_issue_type.outputs.ISSUE_TYPE }}
           summary: "${{ github.event.issue.title }}"
-          description: |
-           ${{ steps.md2jira.outputs.output-text }}"
+          description: "${{ steps.md2jira.outputs.output-text }}"
           fields: |
             {
               "assignee": {
