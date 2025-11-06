@@ -1,4 +1,3 @@
----
 name: "✨ 기능 개발 템플릿"
 about: 개발해야 하는 기능을 단위별로 명세합니다.
 title: "[Feat] Issue title"
@@ -24,4 +23,3 @@ body:
       - [ ] 항목 2
   validations: 
   required: true
----
