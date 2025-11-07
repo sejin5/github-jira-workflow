@@ -22,7 +22,7 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
-
+        
       - name: Issue Parser
         uses: stefanbuck/github-issue-praser@v3
         id: issue-parser
@@ -74,12 +74,6 @@ jobs:
           fi
 
           echo "TEMPLATE=$TEMPLATE" >> $GITHUB_OUTPUT
-
-      - name: Issue Parser
-        uses: stefanbuck/github-issue-praser@v3
-        id: issue-parser
-        with:
-            template-path: ${{ steps.detect_template.outputs.TEMPLATE }}
             
       - name: Convert markdown to Jira Syntax
         uses: peter-evans/jira2md@v1
